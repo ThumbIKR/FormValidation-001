@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form valudation with CSS4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<h1 class="form-heading">Application Form</h1>
+<form class="application-form">
+    <p class="helper-text">* denotes a required field</p>
+    
+    <div class="field-row">
+        <label class="form-label" for="firstName">First name</label>
+        <input type="text" id="firstName" class="field text-field first-name-field" required>
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label" for="initials">Initials</label>
+        <input type="text" id="initials" class="field field-short text-field initials-field">
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label cf" for="lastName">Last name</label>
+        <input type="text" id="lastName" class="field text-field last-name-field" required>
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label" for="dateOfBirth">Date of birth</label>
+        <input type="date" id="dateOfBirth" class="field date-field dob-field" min="1900-01-01" max="2015-09-18"  required>
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label" for="tel">Tel</label>
+        <input type="tel" id="tel" class="field text-field tel-field" required>
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="field text-field email-field" required>
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label" for="website">Website</label>
+        <input type="url" id="website" class="field text-field url-field website-field">
+        <span class="message"></span>
+    </div>
+    
+    <div class="field-row">
+        <label class="form-label"></label>
+        <button class="form-button">Apply now</button>
+    </div>
+</form>
+  
+</body>
+</html>
